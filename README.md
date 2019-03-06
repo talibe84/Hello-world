@@ -1,3 +1,1 @@
-# Hello-world
-First Made -repo
-First code on Gifthub edit 
+Computation of Future Valueas a function of Present value(Discounted)
