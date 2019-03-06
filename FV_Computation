@@ -1,0 +1,74 @@
+#include <iostream>
+#include <cmath>
+using namespace std; 
+
+class FV
+{
+private:
+	double PV; 
+	double Discount_Factor; 
+public:
+	void setPV(double);  // function prototype that accept PV (data type double)  (set)
+	void setDiscount_Factor(double); 
+	double getPV() const; // function that returns a double named the same as PV  (get)
+	double getDiscount_Factor() const; 
+	double getFV() const; 
+}; 
+
+// setPV assigns a value to the PV paramter. 
+
+void FV ::setPV(double w)
+{
+	PV = w; 
+}
+
+// SetDiscount_Factor assigns a value to the Dis
+void FV:: setDiscount_Factor(double Rate)
+{
+	Discount_Factor = Rate; 
+}
+
+// get the PV returns the value in the PV member.
+
+double FV::getPV() const
+{
+	return PV; 
+}
+double FV::getDiscount_Factor() const 
+{
+	return Discount_Factor; 
+}
+
+// get FV returns the product of width tunes length; 
+
+double FV:: getFV() const
+
+{
+	return PV * Discount_Factor; 
+} 
+
+int main ()
+{
+	FV Formula; 
+	double Stock_PV; 
+	double Stock_Discount_Factor;
+	
+	cout << " This Program program will calculate the FV of a stock \n"; 
+	cout << "what is the Present Value"; 
+	cin >> Stock_PV; 
+	cout << " What is the Discount Factor?"; 
+	cin >> Stock_Discount_Factor; 
+	
+	// store the Stock Present Value and the Discount Factor in the object FV
+	
+	Formula.setPV(Stock_PV);
+	Formula.setDiscount_Factor(Stock_Discount_Factor); 
+	
+	cout << " Here is the Future Values data: \n";
+	cout << " Present Value: " << Formula.getPV() << endl; 
+	cout << " Discount Factor: " << Formula.getDiscount_Factor() << endl; 
+	cout << " Future Value: " << Formula.getFV() << endl; 
+	
+	return 0; 
+	
+}
