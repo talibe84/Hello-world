@@ -1,5 +1,4 @@
-# Hello-world
-Quantitative Finance 
+#Quantitative Finance 
 
 
 Object of Model is simulation is to approximate this expaction by using law of large numbers, 
