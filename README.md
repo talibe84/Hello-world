@@ -1,3 +1,1 @@
-# Hello-world
-First Made -repo
-First code on Gifthub edit 
+#The Following will include a series of Quatitative Financial Engineering problems that I will take on... 
