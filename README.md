@@ -1,4 +1,4 @@
-# Wide-Array of QR Scrips 
+# Wide-Array of QR Scrips *Ongoing
 
 * Quantitative Finance code 
 
